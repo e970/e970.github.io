@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function foo(){
+            // document.write('hello!')
+            
+            document.getElementById('d').focus();
+        };
+        function f2(){
+            // document.getElementById('dd').focus();
+            document.getElementById('dd').value = 'OK';
+        }
+    </script>
+</head>
+<body>
+    HELLO
+    <input type="text" id='d' onmouseover="f2()" value='VVV'>
+    <input type="text" id='dd' onmouseover="f2()" value='VVV'>
+    <button type='button' onclick='foo()'>Focus to input box</button>
+</body>
+</html>
